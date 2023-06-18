@@ -2,28 +2,29 @@
 
 This is code for image retrieval by using learning-based method. Also, we add mutual acknowledgement and spliting picture to increase the accuracy.
 
-Requirements:
+## Requirements:
 
     faiss-gpu=1.7.2
     pytorch
     skimage
     PIL(Pillow)
 
-To test images seperately:
+## To test images seperately:
     ``` 
     python main.py -m -sp -im image_to_test
     ```
-Directly test all images:
+
+## Directly test all images:
     ``` 
     python main.py -m -sp 
     ```
 
-Options:
+## Options:
     ``` 
     python main.py [-n NETWORK] [-d DATA_DIR] [-f FEATURE_DIR] [-r --RESULT_DIR] [-k TOP_K] [-im IMG_TEST] [-dn CROP_INTO_NxN] [-nin] [-sp] [-m] [-np] [-dr SPLIT_DROP_RATE] 
     ```
 
-Help:
+## Help:
 - n: network for retrieving
 - d: image data folder
 - f: feature folder
@@ -37,5 +38,5 @@ Help:
 - np: do not copy retrieved images to result folder
 - dr: define the drop rate of splited feature
 
-Reference:
+## Reference:
 - https://github.com/KhaLee2307/image-retrieval
