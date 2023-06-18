@@ -9,14 +9,19 @@ Requirements:
     skimage
     PIL(Pillow)
 
-For scoring:
-    To test images seperately:
-    ``` python main.py -m -sp -im image_to_test ```
-    Directly test all images:
-    ``` python main.py -m -sp ```
+To test images seperately:
+    ``` 
+    python main.py -m -sp -im image_to_test
+    ```
+Directly test all images:
+    ``` 
+    python main.py -m -sp 
+    ```
 
 Options:
-    ``` python main.py [-n NETWORK] [-d DATA_DIR] [-f FEATURE_DIR] [-r --RESULT_DIR] [-k TOP_K] [-im IMG_TEST] [-dn CROP_INTO_NxN] [-nin] [-sp] [-m] [-np] [-dr SPLIT_DROP_RATE] ```
+    ``` 
+    python main.py [-n NETWORK] [-d DATA_DIR] [-f FEATURE_DIR] [-r --RESULT_DIR] [-k TOP_K] [-im IMG_TEST] [-dn CROP_INTO_NxN] [-nin] [-sp] [-m] [-np] [-dr SPLIT_DROP_RATE] 
+    ```
 
 Help:
 - n: network for retrieving
